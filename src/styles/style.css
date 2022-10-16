@@ -1,0 +1,1256 @@
+/* Fonts imported */
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w5aXo.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXo.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/vollkorn/v13/0ybgGDoxxrvAnPhYGzMlQLzuMasz6Df2MHGeHmmc.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+/* Universal Styles */
+
+html {
+    font-size: 18px;
+}
+
+.open {
+    font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.vollkorn {
+    font-family: 'Vollkorn', serif;
+}
+
+.montserrat {
+    font-family: 'Montserrat', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wrap-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    font-weight: 400;
+}
+
+.special-link {
+    text-decoration: none;
+}
+
+.special-link:hover {
+    font-weight: bold;
+}
+
+.black {
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
+.gold {
+    color: rgb(248, 210, 109)
+}
+
+.blue {
+    color: rgb(5, 22, 50);
+}
+
+.lightblue {
+    color:hsl(217, 82%, 20%)
+}
+
+.red {
+    color: red;
+}
+
+.background-black {
+    background-color: black;
+}
+
+.background-gold {
+    background-color: #f8d26d;
+}
+
+.background-dark-grey {
+    background-color: rgb(109, 113, 114);
+}
+
+.background-blue {
+    background-color: rgb(5, 22, 50);
+}
+
+.background-lightblue {
+    background-color: hsl(217, 82%, 20%);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.underline-gold {
+    text-decoration: #f8d26d underline;
+}
+
+.underline-blue {
+    text-decoration: rgb(5, 22, 50) underline;
+}
+
+.underline-white {
+    text-decoration: white underline;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.relative {
+    position: relative;
+}
+
+/* Header */
+
+h1 {
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.header-text {
+    padding: 2.3rem 0 2.3rem 1rem;
+}
+
+#header-logo {
+    height: 8rem;
+    padding: 0.7rem 1.3rem;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav ul {
+    text-align: center;
+}
+
+.nav-container {
+    display: inline;
+    box-sizing: border-box;
+    padding: 0 2.5rem;
+}
+
+.nav-element {
+    text-decoration: none;
+    font-size: 1.15rem;
+    text-align: center;
+    line-height: 2;
+}
+
+.nav-element:hover {
+    font-weight: bold;
+}
+
+/* Facebook */
+
+.facebook {
+    position: absolute;
+    right: 2rem;
+    width: 2rem;
+    top: 3.5rem;
+}
+
+/* Special nav */
+
+#special-nav-element {
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 0.3rem 0;
+    color: rgb(5, 22, 50);
+}
+
+#special-nav-element:hover {
+    color: white;
+}
+
+#special-nav {
+    display: none;
+}
+
+/* Dropdown menu */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    background-color: black;
+    width: 100%;
+}
+
+.dropdown-content a {
+    color: rgb(248, 210, 109);
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Small nav */
+
+.small-nav-container {
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+.small-nav-element {
+    text-decoration: none;
+    font-size: 1.35rem;
+    line-height: 2;
+}
+
+.small-nav-element:hover {
+    font-weight: bold;
+}
+
+#small-nav {
+    position: absolute;
+    width: 300px;
+    top: 0px;
+    z-index: 4;
+    height: 100%;
+    box-sizing: border-box;
+    left: -500px;
+    transition: left 0.3s linear;
+}
+
+#small-nav ul {
+    text-align: left;
+}
+
+#dropdown-button {
+    color: rgb(248, 210, 109);
+    float: right;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+}
+
+#small-dropdown-content {
+    display: none;
+    background-color: rgb(109, 113, 114);
+    width: 100%;
+    padding-left: 10px;
+}
+
+#close-menu {
+    font-size: 3rem;
+    padding-right: 10px;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+}
+
+#close-menu:hover {
+    font-weight: bold;
+}
+
+/* Index */
+
+.index-button {
+    font-size: 1rem;
+    text-align: center;
+    border: white 2px solid;
+    padding: 0.8rem 0.5rem;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: hsl(44, 91%, 85%);
+}
+
+.button2:hover {
+    background-color: hsl(217, 82%, 20%);
+}
+
+#index-intro-img {
+    width: 100%;
+}
+
+.index-intro-text {
+    width: 20rem;
+    height: 20rem;
+    left: 5rem;
+    top: 6rem;
+    opacity: 0.8;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.index-about {
+    text-align: center;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    font-size: 1.7rem;
+    line-height: 1.3;
+}
+
+.index-about h3 {
+    margin-bottom: 1rem;
+}
+
+.index-services img {
+    width: 50%;
+}
+
+.index-services div {
+    width: 50%;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.index-services div h3 {
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.index-services div ul {
+    font-size: 1.6rem;
+    padding-left: 3rem;
+    line-height: 1.4;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.index-services ul li::before {
+    content: "\2022";
+    color: rgb(248, 210, 109);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.index-services a {
+    text-align: center;
+}
+
+.index-contact {
+    text-align: center;
+    margin: 1rem auto;
+    padding: 2rem;
+}
+
+.index-contact h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-decoration: underline white;
+}
+
+.index-contact p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* About */
+
+.about-intro {
+    padding: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.about-intro p {
+    margin-bottom: 0.5rem;
+}
+
+.about-img {
+    width: 50%;
+}
+
+.about-diplomes img {
+    width: 50%;
+}
+
+.about-diplomes div {
+    width: 50%;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-diplomes div h3 {
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.about-diplomes div ul {
+    font-size: 1.4rem;
+    padding-left: 3rem;
+    line-height: 1.4;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+  
+.about-diplomes  ul li::before {
+    content: "\2022";
+    color: rgb(248, 210, 109);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.about-services {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 1.4rem;
+}
+
+.about-services p {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.about-contact {
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+/* Services */
+
+.services {
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.services-img {
+    width: 100%;
+}
+
+.services-contact {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1.2rem;
+}
+
+.services-title {
+    padding: 1.3rem;
+    font-size: 1.5rem;
+}
+
+.services-text {
+    margin-bottom: 1rem;
+}
+
+.services-text div {
+    width: 50%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.services-text div p {
+    padding: 1rem;
+}
+
+.services-text img {
+    width: 50%;
+}
+
+.services-text div ul {
+    list-style: none;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    line-height: 1.5;
+}
+
+.services-text  ul li::before {
+    content: "\2022";
+    color: rgb(248, 210, 109);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.services-specific-contact {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1.2rem;
+}
+
+.services-specific-contact p {
+    margin-bottom: 1rem;
+}
+
+/* Contact */
+
+.section-div {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.section-title {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.section-text {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.errors, .success {
+    padding: 1em;
+}
+
+.errors .error-msg {
+    background: #FF3D3D;
+    color: #FFE5E5;
+    font-weight: bold;
+    padding: .5em .2em;
+    margin-top: .2em;
+}
+
+.success .success-msg {
+    background: #2b8a3e;
+    color: #f8f9fa;
+    font-weight: bold;
+    padding: .5em .2em;
+    margin-top: .2em;
+}
+
+label {
+    font-size: 1rem;
+    display: inline-block;
+    width: 7rem;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    font-size: 1rem;
+    width: 25rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: rgb(248, 210, 109) 1px solid;
+    box-sizing: border-box;
+}
+
+.form-div {
+    margin: 1rem 0;
+    box-sizing: border-box;
+}
+
+.input-text {
+    font-size: 1rem;
+}
+
+#object {
+    width: 25rem;
+}
+
+#message {
+    width: 40rem;
+    height: 5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: rgb(248, 210, 109) 1px solid;
+    box-sizing: border-box;
+}
+
+#message-title {
+    vertical-align: top;
+}
+
+#submit {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    background-color: rgb(248, 210, 109);
+    color: black;
+    border-radius: 0.5rem;
+    border: hidden;
+    position: relative;
+    left: 7.25rem;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.open-law {
+    cursor: pointer;
+}
+
+.close-law-button {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    background-color: rgb(248, 210, 109);
+    color: black;
+    border-radius: 0.5rem;
+    border: hidden;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.inpage-law {
+    width: 60%;
+    height: 85vh;
+    z-index: 3;
+    background-color: white;
+    box-shadow: 0 0 2rem black;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    overflow: scroll;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+/* Confidentialité et utilisation */
+
+.project-section {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-bottom: rgb(248, 210, 109) solid 0.2rem;
+    padding-bottom: 1rem;
+}
+
+.close-project {
+    font-size: 3rem;
+    cursor: pointer;
+    text-align: right;
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+}
+
+.law-text {
+    font-size: 0.9rem;
+    text-align: justify;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.law-section-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.law-section-subtitle {
+    font-style: italic;
+    font-size: 1.1rem;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+
+.footer {
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 0.9rem;
+    background-color: black;
+}
+
+.footer-div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-flex-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.left-footer {
+    width: 15rem;
+}
+
+.right-footer {
+    text-align: right;
+    width: 15rem;
+}
+
+footer h4 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.credit {
+    font-size: 0.6rem;
+    padding-top: 0.5rem;
+}
+
+.logo-facebook {
+    height: 2rem;
+}
+
+/* Small footer */
+
+.small-footer {
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 0.9rem;
+    background-color: black;
+    text-align: center;
+    display: none;
+}
+
+.small-footer-div {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.small-footer-div div {
+    padding-bottom: 1rem;
+}
+
+.small-footer-center {
+    margin-top: 0.5rem;
+}
+
+.small-logo-facebook {
+    height: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Responsive design */
+
+@media only screen and (max-width: 1300px) {
+    .index-intro-text {
+        top: 3rem;
+    }
+
+    .footer-div {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    html {
+        font-size: 16.5px;
+    }
+
+    .index-intro-text {
+        width: 17rem;
+        height: 17rem;
+        font-size: 2rem;
+    }
+
+    .index-services div h3 {
+        font-size: 1.7rem;
+    }
+
+    .index-services div ul {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    #message {
+        width: 30rem;
+    }
+
+    .services-text div {
+        font-size: 1.1rem;
+    }
+
+    .services-text div p {
+        padding: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 975px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .index-services div h3 {
+        font-size: 1.4rem;
+    }
+
+    .index-services div ul {
+        font-size: 1.2rem;
+    }
+
+    .footer-div {
+        width: 100%;
+    }
+
+    .about-diplomes div h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-diplomes div ul {
+        font-size: 1.2rem;
+        padding-left: 2rem;
+    }
+
+    .services-text img {
+        width: 100%;
+    }
+
+    .services-text div {
+        width: 100%;
+    }
+
+    .services-text div p {
+        padding: 1rem;
+    }
+
+    .services-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .footer {
+        display: none;
+    }
+
+    .small-footer {
+        display: block;
+    }
+
+    .index-intro-text {
+        width: 16rem;
+        height: 12rem;
+        font-size: 1.8rem;
+        left: 2rem;
+    }
+
+    .index-about {
+        font-size: 1.3rem;
+    }
+
+    .about-services {
+        font-size: 1.3rem;
+    }
+
+    .about-contact {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #message {
+        width: 25rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .index-services div {
+        padding-top: 0.7rem;
+    }
+
+    .index-services div h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .index-services div ul {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .index-contact h3 {
+        font-size: 1.7rem;
+    }
+
+    .about-diplomes img {
+        width: 100%;
+    }
+
+    .about-diplomes div {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    #submit {
+        left: 0;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .header-text {
+        padding: 2rem 0 2rem 1rem;
+    }
+
+    #header-logo {
+        height: 5.5rem;
+    }
+
+    .facebook {
+        top: 2.8rem;
+    }
+
+    .index-about {
+        font-size: 1.1rem;
+    }
+
+    .index-button {
+        font-size: 0.8rem;
+    }
+
+    .services {
+        font-size: 1.1rem;
+    }
+
+    .services-contact {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .normal-nav {
+        display: none;
+    }
+
+    #special-nav {
+        display: block;
+    }
+
+    .index-intro-text {
+        width: 12rem;
+        height: 9rem;
+        font-size: 1.4rem;
+        left: 1rem;
+        top: 2rem;
+    }
+
+    .index-services div {
+        padding-top: 0.3rem;
+    }
+
+    .index-services div h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .index-services div ul {
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .index-contact {
+        padding: 1rem;
+    }
+
+    .index-contact h3 {
+        font-size: 1.3rem;
+    }
+
+    .index-contact p {
+        font-size: 1rem;
+    }
+
+    .about-intro {
+        font-size: 1.2rem;
+    }
+
+    .services-specific-contact {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: 13px;
+    }
+
+    #special-nav-element {
+        padding: 0.8rem 1rem 0 1rem;
+    }
+
+    #small-nav {
+        width: 100%;
+    }
+
+    #dropdown-button {
+        top: 5px;
+    }
+
+    .inpage-project {
+        width: 90%;
+        height: 95vh;
+    }
+
+    .inpage-law {
+        width: 90%;
+        height: 95vh;
+    }
+
+    .section-text {
+        font-size: 0.95rem;
+        line-height: 1.1rem;
+    }
+
+    #index-button-special {
+        font-size: 0.6rem;
+        padding: 0.5rem;
+    }
+
+    .about-intro {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #header-logo {
+        padding: 0.5rem 0.5rem;
+        height: 5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-text {
+        padding: 1.6rem 0 0 1rem;
+    }
+
+    .facebook {
+        top: 2rem;
+        right: 1.5rem;
+    }
+
+    .index-button {
+        font-size: 0.6rem;
+    }
+
+    .index-about {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+
+    .index-contact h3 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .index-contact p {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    input {
+        width: 100%;
+    }
+
+    #object {
+        width: 100%;
+    }
+
+    #message {
+        width: 100%;
+    }
+
+    #small-nav {
+        width: 100%;
+    }
+
+    .index-intro-text {
+        width: 9rem;
+        height: 6rem;
+        font-size: 1rem;
+    }
+
+    .index-services div h3 {
+        font-size: 0.7rem;
+    }
+
+    .index-services div ul {
+        font-size: 0.6rem;
+        padding-left: 2rem;
+    }
+
+    .about-services {
+        font-size: 1.1rem;
+    }
+
+    .about-contact {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #header-logo {
+        padding: 0.3rem 0;
+        height: 4rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .header-text {
+        padding: 1.2rem 0 0 1rem;
+    }
+
+    .facebook {
+        top: 1.5rem;
+        right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #header-logo {
+        height: 3rem;
+    }
+
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    .header-text {
+        padding: 0.9rem 0 0 1rem;
+    }
+
+    .facebook {
+        top: 1.2rem;
+        width: 1.5rem;
+    }
+
+    .index-intro-text {
+        width: 7rem;
+        height: 5rem;
+        font-size: 0.8rem;
+        left: 0.5rem;
+        top: 1rem;
+    }
+
+    .index-about {
+        font-size: 0.7rem;
+    }
+
+    .index-services div h3 {
+        font-size: 0.6rem;
+    }
+
+    #index-button-special {
+        font-size: 0.4rem;
+        padding: 0.3rem;
+    }
+
+    .small-footer-div h4 {
+        font-size: 1.3rem;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+}
