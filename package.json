@@ -1,0 +1,17 @@
+{
+  "name": "alexandre-willems",
+  "version": "1.0.0",
+  "description": "Site internet du kinésithérapeute Alexandre Willems à Mettet",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
+  },
+  "author": "Ben Duterme",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
