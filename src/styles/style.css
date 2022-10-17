@@ -562,6 +562,10 @@ nav ul {
     margin-left: -1em;
 }
 
+.kine-small {
+    display: none;
+}
+
 .services-specific-contact {
     text-align: center;
     font-size: 1.3rem;
@@ -828,6 +832,15 @@ footer h4 {
     .footer-div {
         width: 90%;
     }
+
+    .about-diplomes div h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-diplomes div ul {
+        font-size: 1.2rem;
+        padding-left: 2rem;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -862,6 +875,15 @@ footer h4 {
     .services-text div p {
         padding: 0.5rem;
     }
+
+    .about-diplomes div h3 {
+        font-size: 1.3rem;
+    }
+
+    .about-diplomes div ul {
+        font-size: 1.1rem;
+        padding-left: 2rem;
+    }
 }
 
 @media only screen and (max-width: 975px) {
@@ -883,15 +905,6 @@ footer h4 {
         width: 100%;
     }
 
-    .about-diplomes div h3 {
-        font-size: 1.5rem;
-    }
-
-    .about-diplomes div ul {
-        font-size: 1.2rem;
-        padding-left: 2rem;
-    }
-
     .services-text img {
         width: 100%;
     }
@@ -902,6 +915,14 @@ footer h4 {
 
     .services-text div p {
         padding: 1rem;
+    }
+
+    .kine-large {
+        display: none;
+    }
+
+    .kine-small {
+        display: block;
     }
 
     .services-title {
